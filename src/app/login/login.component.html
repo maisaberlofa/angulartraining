@@ -1,0 +1,21 @@
+<div class="container center-align container-login">
+    <div class="card-panel grey lighten-3">
+        <div class="row">
+            <div class="input-field col l4 offset-l4">
+                <i class="material-icons prefix">account_circle</i>
+                <input #usuario id="icon_prefix" type="text" class="validate" [(ngModel)]="user">
+                <label for="icon_prefix">Usuário</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col l4 offset-l4">
+                <i class="material-icons prefix">vpn_key</i>
+                <input #senha id="icon_telephone" type="tel" class="validate" [(ngModel)]="password">
+                <label for="icon_telephone">Senha</label>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn" (click)="btnLogin()">Login</button>
+        </div>
+    </div>
+</div>
